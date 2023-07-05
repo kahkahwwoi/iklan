@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!-- MPD file Generated with GPAC version 2.1-DEV-rev466-g45e0751e-master at 2023-07-05T17:20:25.994Z -->
+<MPD xmlns="urn:mpeg:dash:schema:mpd:2011" minBufferTime="PT1.500S" type="static" mediaPresentationDuration="PT0H0M10.289S" maxSubsegmentDuration="PT0H0M5.000S" profiles="urn:mpeg:dash:profile:isoff-on-demand:2011">
+ <ProgramInformation moreInformationURL="http://gpac.io">
+  <Title>BBB</Title>
+ </ProgramInformation>
+
+ <Period duration="PT0H0M10.289S">
+  <AdaptationSet segmentAlignment="true" maxWidth="1280" maxHeight="720" par="16:9" lang="und" startWithSAP="1" subsegmentAlignment="true" subsegmentStartsWithSAP="1">
+   <ContentComponent id="256" contentType="video"/>
+   <ContentComponent id="257" contentType="audio"/>
+   <Representation id="1" mimeType="video/mp4" codecs="avc1.42C01F,ac-3" width="1280" height="720" sar="1:1" bandwidth="480000">
+    <AudioChannelConfiguration schemeIdUri="tag:dolby.com,2014:dash:audio_channel_configuration:2011" value="A000"/>
+    <BaseURL>offline_dashinit.mp4</BaseURL>
+    <SegmentBase indexRangeExact="true" indexRange="1392-1459">
+     <Initialization range="0-1375"/>
+    </SegmentBase>
+   </Representation>
+  </AdaptationSet>
+ </Period>
+</MPD>
